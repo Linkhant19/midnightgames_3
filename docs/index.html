@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NumDle</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://kit.fontawesome.com/9addbf4292.js" crossorigin="anonymous"></script>
+        <script src="./main.js" defer></script>
+    </head>
+
+    <body>
+        <div id="answer">
+            <p>Current Guess: <span id="currentGuess">__________</span></p>
+            High Score: <span id="score">0</span>
+        </div>
+    
+        <div id="guess">
+            <input type="text" id="guessInput" name="guessInput" placeholder="Type your guess here">
+            <button type="button" id="GuessButton" onclick="submitGuess()">Guess!</button>
+        </div>
+    
+        <div id="hints">
+            <p>Prime Hint: <div id="primeHint" class="hintBox"></div></p>
+            <p>Length Hint: <div id="lengthHint" class="hintBox"></div></p>
+            <p>Sum Hint: <div id="sumHint" class="hintBox"></div></p>
+        </div>
+    
+        <div id="restart">
+            <button id="nextButton" style="display:none;" onclick="nextQuestion()">Next</button>
+        </div>
+    </body>
+
+</html>
